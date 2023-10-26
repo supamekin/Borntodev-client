@@ -371,7 +371,7 @@ const HomePages = () => {
                         <span>Front-End Developer อย่างมืออาชีพ</span>
                       </h6>
                       <p className="card-text">
-                      <p>ให้คุณ</p>
+                      <p>ให้</p>
                 <Typewriter
                   text={[
                     '"Basic IT"',
