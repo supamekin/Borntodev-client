@@ -1,0 +1,16 @@
+.Home05 {
+    display: flex;
+    justify-content: center;
+    font-family: Prompt;
+    border-radius: 10px;
+}
+
+.Home05-container {
+    max-width: 1425px;
+}
+
+.Home05-item01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

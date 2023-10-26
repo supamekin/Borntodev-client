@@ -1,0 +1,22 @@
+.modal-dialog {
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0;
+    height: 90%;
+    align-items: center;
+}
+
+.modal-content {
+    width: auto !important;
+    background-color: transparent;
+    border: 0;
+    box-shadow: 0;
+
+}
+
+.modal-header {
+    border: 0;
+}
