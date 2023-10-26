@@ -4,7 +4,7 @@ npm install
 ## step 2 : run the Project
 npm run dev
 
-## โครงส้รางของ React
+## โครงสร้างของ React
     1: การสร้างไฟล์
     2: การเข้าถึงไฟล์
     3: install & run
