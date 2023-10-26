@@ -374,12 +374,12 @@ const HomePages = () => {
                       <p>ให้</p>
                 <Typewriter
                   text={[
-                    '"Basic IT"',
-                    '"Computer Programming"',
-                    '"HTML/CSS"',
-                    '"JavaScript"',
-                    '"Git"',
-                    '"เขียนเว็บแอปเป็นแบบไวๆ"',
+                    'Basic IT',
+                    'Computer Programming',
+                    'HTML/CSS',
+                    'JavaScript',
+                    'Git"',
+                    'เขียนเว็บแอปเป็นแบบไวๆ',
                   ]}
                   delay={2000}
                   speed={15}
