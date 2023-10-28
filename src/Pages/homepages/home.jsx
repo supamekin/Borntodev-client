@@ -3,6 +3,7 @@ import "../homepages/styles/homepages02.css";
 import "../homepages/styles/homepages03.css";
 import "../homepages/styles/homepages04.css";
 import "../homepages/styles/homepages05.css";
+import "../homepages/styles/homepages06.css";
 import Typewriter from "../../components/typewriter";
 import IconDiscord from "../../assets/icons/iconDiscord";
 import HomepagesItem from "./component/Homepages";
@@ -80,13 +81,14 @@ const HomePages = () => {
               </div>
               <div className="Home01-item07">
                 <div className="Home01-item07-text">
-                  <HomepagesItem
-                    icon={<IconDiscord />}
-                    HomePagesName="borntoDev Community on Discord"
-                  />
-                  มาร่วมพูดคุย สอบถามปัญหา แบ่งปันความรู้ <br /> และ
-                  เป็นส่วนหนึ่งกับเราได้แล้ววันนี้ฟรี !!
-                  <br />
+                  <strong>
+                    <i><IconDiscord /></i>
+                    <span className="Home01-icon"> borntoDev Community on Discord</span>
+                  </strong>
+                  <span style={{ fontSize: "16px", fontFamily: "Prompt" }}> มาร่วมพูดคุย สอบถามปัญหา แบ่งปันความรู้
+                    <br /> และ เป็นส่วนหนึ่งกับเราได้แล้ววันนี้ฟรี !!
+                  </span>
+                  <a href="" style={{ fontSize: "16px", fontFamily: "Prompt", fontWeight: "600", color: "#ffc40b", textDecoration: "none" }}> คลิกที่นี่</a>
                 </div>
               </div>
             </div>
@@ -347,45 +349,55 @@ const HomePages = () => {
         <div className="Home05-container">
           <div className="Home05-item01">
             <div className="Home05-card01">
-              <img src={Mockuplogo} alt={Mockuplogo} style={{width:"100%", height:"100%"}}/>
+              <img src={Mockuplogo} alt={Mockuplogo} style={{ width: "100%", height: "100%" }} />
             </div>
             <div className="Home05-card02">
-              <div className="row">
-                <div className="col-sm-6" style={{width:"100%"}}>
+              <div className="Home5-row">
+                <div className="Home05-col-sm-6" style={{ width: "100%" }}>
                   <div
                     className="card"
                     style={{
                       borderRadius: "10px",
                       color: "black",
+                      border: "0"
                     }}
                   >
-                    <div className="card-body">
+                    <div className="Home05-card-body">
                       <div className="card01">🔴 Live สอนสด ผ่านออนไลน์</div>
-                      <h5 className="card-title">
+                      <h5 className="card-title" style={{ fontSize: "48px" }}>
                         <strong>ROAD TO FRONT-END</strong> <br />
                         <strong>DEVELOPER Bootcamp</strong>
                       </h5>
-                      <h6>
+                      <h6 style={{ fontSize: "30px" }}>
                         <span>หลักสูตรจัดเต็ม 3 เดือนครึ่งสู่การเป็น</span>{" "}
                         <br />
                         <span>Front-End Developer อย่างมืออาชีพ</span>
                       </h6>
-                      <p className="card-text">
-                      <p>ให้</p>
-                <Typewriter
-                  text={[
-                    'Basic IT',
-                    'Computer Programming',
-                    'HTML/CSS',
-                    'JavaScript',
-                    'Git"',
-                    'เขียนเว็บแอปเป็นแบบไวๆ',
-                  ]}
-                  delay={2000}
-                  speed={15}
-                  infinite
-                  reverse={true}
-                />
+                      <p className="card-text" style={{ fontSize: "30px" }}>
+                        <p><span>คุณจะได้เรียนรู้ </span>
+                          <Typewriter
+                            text={[
+                              'Basic IT',
+                              'Computer Programming',
+                              'HTML/CSS',
+                              'JavaScript',
+                              'Git"',
+                              'CSS Framework',
+                              'Web Security',
+                              'Web Programming',
+                              'React',
+                              'SEO/Online Marketing',
+                              'UX/UI Design',
+                              'Vue',
+                              'Web Testing',
+
+                            ]}
+                            delay={2000}
+                            speed={15}
+                            infinite
+                            reverse={true}
+                          /></p>
+
                       </p>
                       <p style={{ margin: "0" }}>
                         <span>
@@ -397,15 +409,51 @@ const HomePages = () => {
                         </span>
                       </p>
                       <p>
-                        <span>
-                          เวลา 09.00 – 16.00 น. @ WorkWiz เดอะสตรีทรัชดาชั้น 3
-                        </span>
+                        <span class="before-text" style={{ fontSize: "30px" }}>ราคาพิเศษ เพียง </span>
+                        <span class="price-text" style={{ fontSize: "30px" }}>19,900 </span>
+                        <span class="after-text" style={{ fontSize: "15px" }}>฿ / ท่าน (จากปกติ 29,700 ฿)</span>
                       </p>
                       <a href="#" className="btn btn-primary">
                         Go somewhere
                       </a>
+                      <a href="#" className="btn btn-primary">
+                        Go somewhere
+                      </a>
+
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Home06">
+        <div className="Home06-container01">
+          <div className="Home06-content">
+            <div className="Home06-content01">
+              <div className="Home06-content01-item01">
+                <h20>🚀 หลักสูตรที่แนะนำ</h20>
+              </div>
+              <div className="Home06-content01-item02">
+                <p>เรามีหลักสูตรที่พร้อมพัฒนาคุณให้เข้าใจ และ ปฏิบัติได้จริง
+                  <br />
+                  พร้อม Community ขนาดใหญ่ที่ให้ความช่วยเหลือสำหรับทุกคำถาม
+                </p>
+              </div>
+            </div>
+            <div className="Home06-content02">
+              <div className="Home06-content02-item01">
+              <div className="Home06-text01">
+                <strong style={{fontSize:"30px", top:"0"}}>คอร์สเรียนออนไลน์คุณภาพสูง</strong>
+                <p class="default-paragraph" 
+                style={{ textAlign: "left" }}>เรียนเขียนโปรแกรม พัฒนาเทคโนโลยีกับกูรูตัวจริง ที่ให้การสนับสนุนคุณจนไปถึงเป้าหมาย</p></div>
+                </div>
+              <div className="Home06-content02-item01">
+                <div className="Home06-text02">
+                  <a href="" className="home06-text-a">
+                    <span>หลักสูตรทั้งหมด</span>
+                  </a>
                 </div>
               </div>
             </div>

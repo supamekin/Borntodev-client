@@ -3,10 +3,12 @@
     justify-content: center;
     font-family: Prompt;
     border-radius: 10px;
+    padding-bottom: calc(100vw * 0.03);
 }
 
 .Home04-container {
-    max-width: 1425px;
+    width: 100%;
+    max-width: 1245px;
 }
 
 .row {
@@ -47,6 +49,8 @@
 @media screen and (max-width: 1000px) {
     .row {
         width: 100%;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-flow: column;
         align-items: center;
