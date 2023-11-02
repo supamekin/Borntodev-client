@@ -1,0 +1,88 @@
+.Home12 {
+    display: flex;
+    justify-content: center;
+    font-family: Prompt;
+    line-height: 25px;
+    background-color: #f9f9f9;
+}
+
+.Home12-Container {
+    max-width: 1245px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Home12-content01 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-bottom: 30px;
+    margin-bottom: 24px;
+}
+
+.Home12-card01 {
+    width: 100%;
+}
+
+.Home12-card02 {
+    width: 100%;
+    padding: 0 1%;
+    background-color: #f9f9f9;
+}
+
+.Home12-content02 {
+    margin-bottom: 24px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Home12-content03 {
+    margin-bottom: 24px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 1000px) {
+    .Home12-Container {
+        padding: calc((100vw - 180px) * 0.04);
+    }
+}
+
+@media screen and (min-width: 1425px) {
+    .Home12-Container {
+        padding: calc(1245px * 0.04);
+    }
+}
+
+@media screen  {
+    .Home12-Container {
+        width: 100%;
+        padding: calc(600px * 0.06);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Home12-content01 {
+        display: flex;
+        flex-flow: column;
+    }
+    .Home12-content02 {
+        display: flex;
+        flex-flow: column;
+    }
+    .Home12-content03 {
+        display: flex;
+        flex-flow: column;
+    }
+}

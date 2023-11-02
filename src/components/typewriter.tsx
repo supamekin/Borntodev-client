@@ -26,9 +26,7 @@ const Typewriter = ({ text, speed, infinite, delay, reverse }) => {
         return () => clearTimeout(timeout);
       } else if (infinite) {
         if (reverse) {
-          console.log("reverse");
           setTimeout(() => {
-            console.log("setTimeout");
             setReversing(true);
             // setCurrentIndex(0);
             // setCurrentText("");

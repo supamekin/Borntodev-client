@@ -1,0 +1,54 @@
+.Home13 {
+    display: flex;
+    justify-content: center;
+    font-family: Prompt;
+    line-height: 28.8px;
+    background-color: #111111;
+}
+
+.Home13-Container {
+    max-width: 1245px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Home13-content01 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    
+}
+
+.Home13-card01 {
+    width: 100%;
+    padding: 0 1%;
+    background-image: url(https://b2dmain-ruk.cdn.jelastic.net/wp-content/uploads/2022/12/mockup-of-an-angled-macbook-pro-a20334.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.Home13-card02 {
+    width: 100%;
+    padding: 0 1%;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .Home13-content01 {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 25px;
+        padding: 0 1%;
+    }
+    .Home13-card02 {
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+
+

@@ -1,0 +1,35 @@
+.Home14 {
+    display: flex;
+    justify-content: center;
+    font-family: Prompt;
+    background-color: #f2f2f2;
+    padding-top: calc(100vw * 0.03);
+    padding-bottom: calc(100vw * 0.03);
+    text-align: center;
+    font-size: 5em;
+}
+
+.Home14-container {
+    max-width: 1245px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Home14-content01 {
+    padding: 0 1%;
+}
+
+.Home14-content02 {
+    padding: 0 1%;
+}
+
+@media screen  {
+    .Home14-content01 {
+        width: 75%;
+    }
+    .Home14-content02 {
+        width: 25%;
+    }
+}

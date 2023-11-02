@@ -4,11 +4,13 @@
     justify-content: center;
     font-family: Prompt;
     padding-top: calc(100vw * 0.03);
-    padding-bottom: calc(100vw * 0.03);
+    /* padding-bottom: calc(100vw * 0.03); */
 }
 
 .Home06-content {
     width: 100%;
+    padding-top: calc(100vw * 0.03);
+    padding-bottom: calc(100vw * 0.03);
     max-width: 1245px;
 }
 
@@ -69,6 +71,16 @@
 p.default-paragraph {
     margin: 0;
 }
+
+.Home06-content03{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* .iKLtWK {
+    width: 0 !important;
+} */
 
 @media screen and (max-width: 1000px) {
     .Home06-content {

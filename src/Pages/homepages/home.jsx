@@ -4,6 +4,16 @@ import "../homepages/styles/homepages03.css";
 import "../homepages/styles/homepages04.css";
 import "../homepages/styles/homepages05.css";
 import "../homepages/styles/homepages06.css";
+import "../homepages/styles/homepages07.css";
+import "../homepages/styles/homepages08.css";
+import "../homepages/styles/homepages09.css";
+import "../homepages/styles/homepages10.css";
+import "../homepages/styles/homepages11.css";
+import "../homepages/styles/homepages12.css";
+import "../homepages/styles/homepages13.css";
+import "../homepages/styles/homepages14.css";
+import "../homepages/styles/homepages15.css";
+
 import Typewriter from "../../components/typewriter";
 import IconDiscord from "../../assets/icons/iconDiscord";
 import HomepagesItem from "./component/Homepages";
@@ -21,11 +31,64 @@ import ToyoTalogo from "../../assets/logo/logo-toyota-yasothorn.png.webp";
 import Dockerlogo from "../../assets/logo/docker-2.png.webp";
 import figmalogo from "../../assets/logo/figma-300x300.png.webp";
 import ModalVideo from "../../components/modalVideo";
-import { useState } from "react";
 import Mockuplogo from "../../assets/logo/mockuplogo.png";
+import B2Dlogo from "../../assets/logo/logo-b2d-school-blackyellow.png"
+import Businesslogo from "../../assets/logo/business-course-1024x812.jpg"
+import Picture1 from "../../assets/logo/picture-1024x683-1.webp"
+import Devlablogo from "../../assets/logo/devlab_logo-02-minimal-1.png"
+// import Devui from "../../assets/logo/card/Devinit-blog-cardui-900x604.webp"
+// import Macbookimg from "../../assets/logo/mockup-of-an-angled-macbook-pro-a20334.jpg"
+import Accessimg from "../../assets/logo/open-access-2022-300x109.png"
+
+import course1 from "../../assets/logo/gallery/sqr_get-started-php.png"
+import course2 from "../../assets/logo/gallery/PROG-5.webp"
+import course3 from "../../assets/logo/gallery/sqr_ultimate-game-plus.webp"
+import course4 from "../../assets/logo/gallery/sqr_arduino.webp"
+import course5 from "../../assets/logo/gallery/1000x1000-3.png"
+import course6 from "../../assets/logo/gallery/sqr_ux-ui.webp"
+import course7 from "../../assets/logo/gallery/ux_ui.jpg"
+import course8 from "../../assets/logo/gallery/ult-python-2023-sqr.webp"
+import course9 from "../../assets/logo/gallery/sqr_professional-c-sharp-1.webp"
+import course10 from "../../assets/logo/gallery/sqr_java.png"
+import course11 from "../../assets/logo/gallery/sqr_ultimate-game-plus.webp"
+import course12 from "../../assets/logo/gallery/sqr_complete-data.webp"
+import course13 from "../../assets/logo/gallery/starter-program-2023-sqr.webp"
+import course14 from "../../assets/logo/gallery/sqr_front-end-1.webp"
+
+
+import { useState } from "react";
+import Slider from "react-styled-carousel";
+import { Container, NavItem } from "react-bootstrap";
+import Cardcontent from "../../components/cardContent/cardContent";
+import CardColor from "../../components/cardContent/cardContent-Color";
+import IconDatabase from "../../assets/icons/iconDatabase";
+import IconGithubY from "../../assets/icons/iconGithubY";
+import IconCode from "../../assets/icons/iconCode";
+import IconCodepen from "../../assets/icons/iconCodepen";
+import IconTerminal from "../../assets/icons/iconTerminal";
+import Blogmongo from "../../assets/logo/card/blog-mongo.webp"
+
 
 const HomePages = () => {
   const [showVideo, setshowVideo] = useState(false);
+  const [cardCourse, setCardCourse] = useState([
+    { image: course1 },
+    { image: course2 },
+    { image: course3 },
+    { image: course4 },
+    { image: course5 },
+    { image: course6 },
+    { image: course7 },
+    { image: course8 },
+    { image: course9 },
+    { image: course10 },
+    { image: course11 },
+    { image: course12 },
+    { image: course13 },
+    { image: course14 },
+
+
+  ])
   return (
     <>
       <div className="Home01">
@@ -444,11 +507,12 @@ const HomePages = () => {
             </div>
             <div className="Home06-content02">
               <div className="Home06-content02-item01">
-              <div className="Home06-text01">
-                <strong style={{fontSize:"30px", top:"0"}}>คอร์สเรียนออนไลน์คุณภาพสูง</strong>
-                <p class="default-paragraph" 
-                style={{ textAlign: "left" }}>เรียนเขียนโปรแกรม พัฒนาเทคโนโลยีกับกูรูตัวจริง ที่ให้การสนับสนุนคุณจนไปถึงเป้าหมาย</p></div>
+                <div className="Home06-text01">
+                  <strong style={{ fontSize: "30px", top: "0" }}>คอร์สเรียนออนไลน์คุณภาพสูง</strong>
+                  <p class="default-paragraph"
+                    style={{ textAlign: "left" }}>เรียนเขียนโปรแกรม พัฒนาเทคโนโลยีกับกูรูตัวจริง ที่ให้การสนับสนุนคุณจนไปถึงเป้าหมาย</p>
                 </div>
+              </div>
               <div className="Home06-content02-item01">
                 <div className="Home06-text02">
                   <a href="" className="home06-text-a">
@@ -457,6 +521,288 @@ const HomePages = () => {
                 </div>
               </div>
             </div>
+
+            <div className="Home06-content03" style={{ overflow: 'hidden', }}>
+              <div >
+                <Slider
+                  cardsToShow={4}
+                  autoSlide={2000}
+                  pauseOnMouseOver={true}
+                  padding="25px"
+                  margin="0"
+                >
+                  {
+                    cardCourse.map((item, index) => (
+                      <div key={index} style={{ width: '0', minWidth: '280px', height: '280px', padding: '6px' }}>
+
+                        <img src={item.image} alt={item.image} style={{ width: '280px', height: '280', padding: "6px" }} />
+                      </div>
+                    ))
+                  }
+                </Slider>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Home07">
+        <div className="Home07-text01">
+          <a href="">🙋 กำลังหาหลักสูตรที่เหมาะกับคุณที่สุดอยู่ ? ให้ทีมงานของเราช่วยเหลือสิ !</a>
+          <a href="">รับคำแนะนำผ่านออนไลน์ คลิกที่นี่ !</a>
+        </div>
+      </div>
+      <div className="Home08">
+        <div className="Home08-content">
+          <div className="Home08-content01">
+            <div className="Home08-content01-item01">
+              <div className="Home08-text01">
+                <h3 style={{ color: "#00000", textAlign: "left" }} >บทความปลุกสมอง เพิ่มความรู้</h3>
+                <span style={{ fontSize: "16px" }}>เพราะบางครั้งความรู้ก็อยู่ในรูปแบบตัวหนังสือสุดพิเศษ​</span> " 😃"
+              </div>
+            </div>
+            <div className="Home08-content01-item01">
+              <div className="Home08-text02">
+                <div className="Home08-button01">
+                  <a href=""><span>อ่านบทความทั้งหมด</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Home08-card">
+            <div className="Home08-content02">
+              <div className="Home08-card-item01">
+                <Cardcontent
+                  imageUrl={Blogmongo}
+                  texttitel="การใช้งาน React Hooks ในการจัดการ State"
+                  a=" | DevInit, Front-End Developer"
+                  text="สารจากนักเขียน หนึ่งในความสำคัญของ React คือการจัดการ state ของแอพพลิเคชัน …"
+                />
+              </div>
+              <div className="Home08-card-item01">
+                <Cardcontent
+                  imageUrl="file:///C:/Users/Pornchita/Desktop/Borntodev/Borntodev-client/src/assets/logo/card/Devinit-blog-mongo-mongoose-600x403.webp"
+                  texttitel="Checkbox VS Radio Button เลือกแบบไหนให้เหมาะกับการใช้งาน?"
+                  a=" | DevInit, UX/UI Designer"
+                  text="สรุปสั้นๆ ก่อนอื่นมาทำความรู้จักกับ Component ทั้ง 2 ตัวนี้ก่อนว่าแต่ละ Com…"
+                />
+              </div>
+              <div className="Home08-card-item01">
+                <Cardcontent
+                  imageUrl={"img1"}
+                  texttitel="การใช้งาน MongoDB และ Mongoose เบื้องต้น"
+                  a=" | Back-End Developer DevInit"
+                  text="สารจากนักเขียน ในปัจจุบันที่เรียกว่า Data-driven world มีปริมาณข้อมูลมากมาย…"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Home09">
+        <div className="Home09-content">
+          <div className="Home09-content-item01" ></div>
+          <div className="Home09-content-item02">
+            <div className="Home09-image">
+              <img src={Accessimg} alt={Accessimg} style={{ margin: "15px 0" }} />
+            </div>
+            <div className="Home09-header">
+              <h1 style={{ textAlign: "center" }}>bornto
+                <span style={{ color: "#ffcc00" }}>Dev
+                </span> Open Access</h1>
+              <h6 style={{ textAlign: "center" }}>
+                <span style={{ fontSize: "16px" }}>คอร์สเรียนเขียนโปรแกรม และ เทคโนโลยีที่เปิดกว้างสำหรับทุกคนให้ได้เข้า
+                  <span style={{ color: "#ffcc00", fontSize: "18px" }}> เรียนฟรี ไม่มีค่าใช้จ่ายให้ต้องกังวล
+                  </span> เพื่อการเรียนรู้ตลอดชีวิตที่สร้างสรรค์</span>
+                <span style={{ fontSize: "16px" }}>เน้นปฏิบัติจริง ผ่านระบบออนไลน์เข้าถึงได้ทุกที่ ทุกเวลา</span></h6>
+            </div>
+            <div className="btn-bcy-1">
+              <a href="">
+                <span>ค้นหาหลักสูตรฟรี</span>
+              </a>
+            </div>
+          </div>
+          <div className="Home09-content-item01"></div>
+        </div>
+      </div>
+      <div className="Home10">
+        <div className="Home10-card-component">
+          <div className="Home10-card-item01" style={{ backgroundColor: "#ffffff", borderRadius: "10px" }}>
+            <CardColor
+              title1="ฟรี"
+              icon={<IconDatabase />}
+              header={"Essential SQL for Everyone"}
+              text="เรียนรู้การเรียกใช้งานฐานข้อมูลด้วยภาษา SQL ตั้งแต่พื้นฐาน เพื่อเตรียมตัวสร้างสรรค์ผลงานระดับ Masterpiece"
+              animation="https://lottie.host/d26550aa-9578-4c59-8f41-bde88cb635f3/VyXP8CFIIC.json"
+            /></div>
+          <div className="Home10-card-item01" style={{ backgroundColor: "#3855ff", borderRadius: "10px", color: "#ffffff" }}>
+            <CardColor
+              title1="ฟรี"
+              title2="ใหม่"
+              icon={<IconGithubY />}
+              header={"GitHub for Developer"}
+              text="ปูทุกพื้นฐานที่สำคัญเกี่ยวกับการใช้งาน Git และ GitHub เบื้องต้น ที่จะได้เปิดโลกใบใหม่ของเหล่า Developer"
+              animation="https://lottie.host/82169b12-4472-4247-b37b-1eb4a12dda13/KwecdBKywJ.json"
+            /></div>
+          <div className="Home10-card-item01" style={{ backgroundColor: "#2779e3", borderRadius: "10px", color: "#ffffff" }}>
+            <CardColor
+              title1="ฟรี"
+              icon={<IconCode />}
+              header={"Get started with TypeScript"}
+              text="มาเริ่มเรียนรู้กับภาษา TypeScript ตั้งแต่พื้นฐาน สู่การใช้งานจริง กับภาษาที่มาแรงที่สุดในเวลานี้"
+              animation="https://lottie.host/0ef010ec-ad7d-443f-86f5-42ed603d0544/mR8vY2tZ84.json"
+            /></div>
+        </div>
+        
+      </div>
+      <div className="Home11">
+        <div className="Home11-card-component">
+          <div className="Home11-card-item01" style={{ backgroundColor: "#ffffff", borderRadius: "10px", color: "#000000" }}>
+            <CardColor
+              title1="ฟรี"
+              icon={<IconTerminal />}
+              header={"Introduction to GoLang"}
+              text="พื้นฐานภาษา Go เบื้องต้นไปจนถึงสามารถนำความรู้ในภาษานี้ไปประยุกต์ใช้ในการทำ Web Service และการเชื่อมต่อกับระบบฐานข้อมูล MySQL"
+            /></div>
+          <div className="Home11-card-item01" style={{ backgroundColor: "#ffc40b", borderRadius: "10px", color: "#000000" }}>
+            <CardColor
+              title1="ฟรี"
+              icon={<IconCodepen />}
+              header={"Introduction to JavaScript"}
+              text="พื้นฐานแบบก้าวกระโดดสำหรับ JavaScript สำหรับใครที่เขียนโปรแกรมมาแล้วอย่างน้อย 1 ภาษา แล้วต้องการย้ายมาลุย JS"
+            /></div>
+        </div>
+      </div>
+      <div className="Home12">
+        <div className="Home12-Container">
+          <div className="Home12-content01">
+            <div className="Home12-card01"></div>
+            <div className="Home12-card02">
+              <div className="card" style={{ borderRadius: "10px", color: "black", border: "0" }}>
+                <div className="Home12-card-body">
+                  <div className="Home12-image01" style={{ marginBottom: "15px" }}><img src={B2Dlogo} alt={B2Dlogo} style={{ maxWidth: "300px" }} /></div>
+                  <h3 style={{ textAlign: "left" }}>พบกับประสบการณ์การเรียนรู้ด้านโค้ด + ไอที
+                    <br />ที่ดีที่สุดได้แล้วที่ borntoDev School</h3>
+                  <ul>
+                    <li style={{ textAlign: "left" }}><span style={{ fontSize: "18px" }}>หลักสูตรที่รวมความรู้ด้านไอทีสมัยใหม่ ตอบโจทย์การทำงานจริง</span></li>
+                    <li><span style={{ fontSize: "18px" }}>ครบถ้วนตั้งแต่เริ่มต้น เหมาะสำหรับผู้เรียนทุกระดับ</span></li>
+                    <li><span style={{ fontSize: "18px" }}>หลักสูตร Open Access เรียนฟรี ไม่จำกัดระยะเวลา กว่า 10 หลักสูตร</span></li>
+                  </ul>
+                  <div className="Home12-button01">
+                    <a href="#" >
+                      Go somewhere
+                    </a>
+                  </div>
+                  <div className="Home12-button02">
+                    <a href="#" >
+                      Go somewhere
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Home12-content02">
+            <div className="Home12-card01">
+              <img src={Businesslogo} alt={Businesslogo} style={{ maxWidth: "100%", height: "auto", marginBottom: "15px" }} /></div>
+            <div className="Home12-card02">
+              <div className="card" style={{ borderRadius: "10px", color: "black", border: "0" }}>
+                <div className="Home12-card-body">
+                  <p style={{ textAlign: "left" }}><strong><span style={{ color: "#333333", fontSize: "16px" }}>บริการหลักที่แนะนำ – borntoDev for Business</span></strong></p>
+                  <h3 style={{ textAlign: "left" }}>อัพเกรดทักษะให้องค์กร<br />
+                    ติดอาวุธด้วย Digital Skills</h3>
+                  <p style={{ textAlign: "left" }}><span style={{ fontSize: "18px" }}>หลักสูตรสำหรับองค์กรที่ถูกออกแบบมาเพื่อธุรกิจโดยเฉพาะ พัฒนาทักษะบุคลากรของคุณให้ก้าวไกล กับหลักสูตรคุณภาพที่มาพร้อมกับ Workshop ให้ฝึกคิด และ ปฏิบัติจริง</span></p>
+                  <ul>
+                    <li><span style={{ fontSize: "18px" }}>ครบจบได้ไวในหลักสูตรระยะสั้น เห็นผลได้ตั้งแต่ วันแรกที่เรียน !</span></li>
+                    <li><span style={{ fontSize: "18px" }}>ร่วมออกแบบ และ ปรับแต่งหลักสูตรให้เหมาะกับอุตสาหกรรมของคุณได้</span></li></ul>
+                  <div className="btn-bcy-1">
+                    <a href="">
+                      <span>ดูรายละเอียดหลักสูตรเพื่อองค์กร</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Home12-content03">
+            <div className="Home12-card01">
+              <img src={Picture1} alt={Picture1} style={{ maxWidth: "100%", height: "auto", marginBottom: "15px" }} />
+            </div>
+            <div className="Home12-card02">
+              <div className="card" style={{ borderRadius: "10px", color: "black", border: "0", textAlign: "center" }}>
+                <div className="Home12-card-body">
+                  <h6><
+                    span style={{ color: "#333333", fontSize: "16px" }}>เกี่ยวกับเรา</span>
+                  </h6>
+                  <h3>เรามีผู้เชี่ยวชาญพร้อมให้คำตอบ <br />
+                    สำหรับทุกคำถามในบทเรียน</h3>
+                  <h6 style={{ lineHeight: "25px" }}>
+                    <span style={{ fontSize: "16px" }}>เปลี่ยนข้อจำกัดเดิม ๆ ของการเรียนรู้ทั้งแบบออนไลน์ และ ออฟไลน์</span><br />
+                    <span style={{ fontSize: "16px" }}>ด้วยทีมงานด้านเทคนิคที่พร้อมตอบทุกคำถามสำหรับผู้เรียน Online Premium</span><br />
+                    <span style={{ fontSize: "16px" }}>ที่ให้คุณได้รับประสบการณ์ในการเรียนรู้ที่ดีที่สุด</span>
+                  </h6>
+                  <p style={{ padding: "27px" }}></p>
+                  <h6 style={{ textAlign: "center", lineHeight: "25px" }}>
+                    <span style={{ fontSize: "16px" }}>📞&nbsp; ผ่านเบอร์โทรศัพท์ 02-096-2899 </span>
+                    <span style={{ fontSize: "16px" }}>หรือ <a href="" style={{ textDecoration: "none", color: "#FFC40B" }}>ผ่านออนไลน์</a><br /></span>
+                    <span style={{ fontSize: "16px" }}>เวลา 09.00 – 18.00 จันทร์ ถึง ศุกร์</span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Home13">
+        <div className="Home13-Container">
+          <div className="Home13-content01">
+            <div className="Home13-card01"></div>
+            <div className="Home13-card02">
+              <div className="card" style={{ borderRadius: "10px", color: "white", border: "0", background: "#111111", margin: "20px 0" }}>
+                <div className="Home13-card-body">
+                  <div className="Home13-image01" style={{ marginBottom: "15px" }}><img src={Devlablogo} alt={Devlablogo} style={{ maxWidth: "300px" }} /></div>
+                  <h3 style={{ textAlign: "left", fontSize: "30px" }}><strong>ระบบฝึกทักษะ การเขียนโปรแกรม<br />
+                  </strong><strong>ที่พร้อมตรวจผลงานคุณ 24 ชั่วโมง</strong></h3>
+                  <ul>
+                    <li style={{ textAlign: "left" }}><span style={{ fontSize: "18px" }}>โจทย์ปัญหากว่า 200 ข้อ ที่รอท้าทายคุณอยู่</span></li>
+                    <li><span style={{ fontSize: "18px" }}>รองรับ 9 ภาษาโปรแกรมหลัก ไม่ว่าจะ Java, Python, C ก็เขียนได้</span></li>
+                    <li><span style={{ fontSize: "18px" }}>ใช้งานได้ฟรี ! ครบ 20 ข้อขึ้นไป รับ Certificate ไปเลย !!</span></li>
+                  </ul>
+                  <div className="Home13-button01">
+                    <a href="#" >
+                      Go somewhere
+                    </a>
+                  </div>
+                  <div className="Home13-button02">
+                    <a href="#" >
+                      Go somewhere
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Home14">
+        <div className="Home14-container">
+          <div className="Home14-content01">1</div>
+          <div className="Home14-content02">2</div>
+        </div>
+      </div>
+      <div className="Home15">
+        <div className="Home15-content">
+          <div className="Home15-content01-item01">
+            <div className="Home15-box01"></div>
+            <div className="Home15-text01">
+              <p style={{ color: "rgba(48,48,48,0.88)", lineHeight: "0", textAlign: "left", margin: "0", paddingBottom: "27px" }}>ยังลังเล สงสัยเกี่ยวกับหลักสูตรอยู่ ?</p>
+              <h3 style={{ textAlign: "left" }} >ให้เราช่วยค้นหาคอร์สที่เหมาะกับคุณ</h3>
+              <p style={{ textAlign: "left" }}>สอบถามเพิ่มเติม พร้อมรับคำแนะนำกับที่ปรึกษาทางการเรียน</p>
+            </div>
+            <div className="Home15-text02">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player src="https://lottie.host/f96b9e60-a73f-4da5-860d-e22da6a217c3/K4OmS2kPBM.json" background="transparent" speed="1" style={{width: "100px", height: "auto",maxWidth:"100%"}} direction="1" mode="normal" loop autoplay></dotlottie-player>
+            </div>
+            <div className="Home15-box01"></div>
           </div>
         </div>
       </div>

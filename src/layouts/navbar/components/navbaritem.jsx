@@ -1,4 +1,8 @@
+import { useLocation, } from "react-router-dom";
+
 function NavbarItem(prop) {
+  const location =useLocation() 
+  console.log(location.pathname === "/my-account" ?"tap02" : "tap01" )
   return (
     <>
       <div className="navbar02-item" onClick={prop.onClick}>
@@ -15,7 +19,7 @@ function NavbarItem(prop) {
               {prop.icon}
             </div>
           ) : null}
-          <div className="tap01" style={{ cursor: "pointer" }}>
+          <div className={location.pathname === "/my-account" ?"tap02" : "tap01" } style={{ cursor: "pointer" }}>
             {prop.titleName}
           </div>
         </div>

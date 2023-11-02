@@ -1,0 +1,53 @@
+.my-Account {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Prompt;
+}
+
+.tap02 {
+    position: relative;
+}
+
+.my-Account-header {
+    display: flex;
+    gap: 20px;
+}
+
+.Name-LastName-header {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+.register-email {
+    margin-bottom: 16px;
+}
+
+.register-password {
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.tap02:hover::after {
+    width: 100%;
+}
+
+.tap02::after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 0;
+    height: 4px;
+    background-color: #ffc40b;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
