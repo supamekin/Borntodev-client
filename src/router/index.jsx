@@ -10,7 +10,7 @@ import Cart from "../Pages/cartpages/cart"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Borntodev-client/",
     element: <MainLayout />,
     children: [
       {
