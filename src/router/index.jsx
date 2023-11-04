@@ -1,4 +1,4 @@
-import { createHashRouter} from "react-router-dom";
+import { createBrowserRouter} from "react-router-dom";
 import MainLayout from "../layouts/mainlayout";
 import HomePages from "../Pages/homepages/home";
 import Blog from "../Pages/blogpages/blog";
@@ -8,9 +8,9 @@ import Business from "../Pages/borntodev-for-businesspages/borntodev-for-busines
 import MyAccount from "../Pages/my-accountpages/my-account";
 import Cart from "../Pages/cartpages/cart"
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: "/Borntodev-client/",
+    path: "/",
     element: <MainLayout />,
     children: [
       {
@@ -43,6 +43,6 @@ const router = createHashRouter([
       },
     ],
   },
-]);
+],{basename:"/Borntodev-client/"});
 
 export default router;
