@@ -10,7 +10,7 @@ import Cart from "../Pages/cartpages/cart"
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "/Borntodev-client/",
     element: <MainLayout />,
     children: [
       {
