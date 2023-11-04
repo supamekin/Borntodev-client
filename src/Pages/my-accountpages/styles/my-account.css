@@ -4,11 +4,10 @@
     align-items: center;
     flex-direction: column;
     font-family: Prompt;
+    border-radius: 0;
 }
 
-.tap02 {
-    position: relative;
-}
+
 
 .my-Account-header {
     display: flex;
@@ -30,16 +29,34 @@
 
 h4 {
     font-size: 16px;
+    font-weight: 600;
+}
+
+.Full-Name {
+    display: flex;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
     font-weight: 700;
+    margin: 14px 0 6px 0;
 }
 
+Input {
+    height: 55px;
+}
 
+.tap02 {
+    position: relative;
+}
 
-.tap02:hover::after {
+.tap02:hover::before {
     width: 100%;
+    color: #ffc40b;
 }
 
-.tap02::after{
+.tap02::before{
     content: "";
     position: absolute;
     border-radius: inherit;
@@ -50,4 +67,27 @@ h4 {
     bottom: 0;
     transition: all 0.5s ease;
 }
+
+.tap02:hover {
+    color: #ffc40b !important;
+}
+
+.tap02-selected::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 4px;
+    background-color: #ffc40b;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+    color: #ffc40b;
+}
+
+.tap02-selected {
+    position: relative;
+    color: #ffc40b !important;
+}
+
 

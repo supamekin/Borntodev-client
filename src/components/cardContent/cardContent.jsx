@@ -19,7 +19,7 @@ function Cardcontent(prop) {
             </div>
         </>
     );
-};
+}
 
 export default Cardcontent;
 

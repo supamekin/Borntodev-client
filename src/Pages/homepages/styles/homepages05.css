@@ -31,6 +31,29 @@
     width: 50%;
 }
 
+.H01-a {
+    text-decoration: none;
+    color: #ffc40b;
+}
+
+.H01-a:hover {
+    color: #000000;
+}
+
+button {
+    font-family: Prompt;
+    background-color: white;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #ffc40b;
+    border-color: #ffc40b;
+    transform: translateY(-5px);
+    transition: all 0.25s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
 @media screen and (max-width: 1000px) {
     .Home05-item01 {
         width: 100%;

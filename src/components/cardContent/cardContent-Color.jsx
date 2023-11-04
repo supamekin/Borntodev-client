@@ -23,10 +23,11 @@ function CardColor(prop) {
           <div className="text-Content">
             <p>{prop.text}</p>
           </div>
-          <div className="animation-Content">
+          {prop.animation ? ( <div className="animation-Content">
           <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
           <dotlottie-player src={prop.animation} background="transparent" speed="1" style={{width: "100%", height: "auto",maxWidth:"100%"}} direction="1" mode="normal" loop autoplay></dotlottie-player>
           </div>
+          ) : null}
         </div>
       </div>
     </>
