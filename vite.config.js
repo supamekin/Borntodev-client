@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/Borntodev-client',
+    base: '/Borntodev-client/',
   }
 
   if (command !== 'serve') {
-    config.base = '/Borntodev-client'
+    config.base = '/Borntodev-client/'
   }
 
   return config
