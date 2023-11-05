@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/',
+    base: '/Borntodev-client/',
   }
 
   if (command !== 'serve') {
-    config.base = '/react-vite-gh-pages/'
+    config.base = '/Borntodev-client/'
   }
 
   return config

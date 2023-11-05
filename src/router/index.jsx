@@ -10,7 +10,7 @@ import Cart from "../Pages/cartpages/cart"
 
 const router = createBrowserRouter([
   {
-    path: "/Borntodev-client/",
+    path: "/",
     element: <MainLayout />,
     children: [
       {
@@ -43,6 +43,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-],{basename:"/Borntodev-client/"});
+],);
 
 export default router;
