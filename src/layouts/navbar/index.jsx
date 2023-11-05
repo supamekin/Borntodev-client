@@ -21,7 +21,7 @@ const Navbar = () => {
           <div className="navbar01-logo" style={{ cursor: "pointer" }}>
             <img
               onClick={() => {
-                routeTo("/home");
+                routeTo("/");
               }}
               src={bornToDevLogo}
               alt={bornToDevLogo}
