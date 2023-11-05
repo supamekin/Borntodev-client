@@ -43,6 +43,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-],{basename:"/Borntodev-client/"});
+],{basename:"/Borntodev-client"});
 
 export default router;
