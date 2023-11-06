@@ -1,0 +1,43 @@
+@media only screen and (max-width: 500px) {
+  .Home02-container-text02 {
+    font-size: 32px;
+  }
+
+  .Home02-button01,
+  .Home02-button02 {
+    padding: 4px 12px;
+  }
+
+  .Home06-content {
+    padding: 0 24px;
+  }
+
+  .Home10 {
+    padding: 0 24px;
+  }
+
+  .Home11 {
+    padding: 0 24px;
+  }
+
+  .footer01-outer01 {
+    padding: 0 24px;
+  }
+
+  .footer03-outer {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer02-icon01 {
+    margin-top: 40px;
+    justify-content: unset;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .Home11-card-item01 {
+    padding: calc(100vw * 0.06);
+  }
+}

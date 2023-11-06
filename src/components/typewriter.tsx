@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-const Typewriter = ({ text, speed, infinite, delay, reverse }) => {
+const Typewriter = ({ text, speed, infinite, delay, reverse,  }) => {
   const [textEvent, setTextEvent] = useState("");
   const [currentArrayText, setCurrentArrayText] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -70,7 +70,7 @@ const Typewriter = ({ text, speed, infinite, delay, reverse }) => {
     }
   }, [reversing, currentIndex]); // Make sure to include myString as a dependency
 
-  return <span style={{ opacity: opacity }}>{currentText}</span>;
+  return <div style={{ opacity: opacity,   }}>{currentText}</div>;
 };
 
 export default Typewriter;

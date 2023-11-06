@@ -15,6 +15,7 @@
 .Home08-content01 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 24px;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .Home08-content01-item01 {
-    width: 50%;
+    width: 100%;
     padding: 0 1%;
 }
 

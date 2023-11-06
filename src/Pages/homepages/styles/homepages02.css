@@ -1,6 +1,6 @@
 .Home02 {
     width: 100%;
-    height: 630px;
+    max-height: 630;
     font-family: Prompt;
     background: rgba(0, 0, 0, 0.8) url("../../../assets/logo/bg-jpg.webp");
     /* background-image: rgba(0, 0, 0, 0.5) url("../../../assets/logo/bg-jpg.webp"); */
@@ -21,10 +21,17 @@
     padding-bottom: 27px;
     line-height: 0.8;
     padding: 40px 0;
+    font-size: 54px;
 }
 
 .Home02-container-text03 {
     padding-bottom: 5%;
+}
+
+.Home02-container-text04 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 div > h14 {
@@ -35,6 +42,7 @@ div > h14 {
 }
 
 .Home02-button01 {
+    width: 100%;
     margin: 0 10px;
     background-color: #ffc40b;
     color: rgb(255, 255, 255);
@@ -47,6 +55,7 @@ div > h14 {
 }
 
 .Home02-button02 {
+    width: 100%;
     margin: 0 10px;
     color: rgb(255, 255, 255);
     padding: 21px 42px;
@@ -55,3 +64,5 @@ div > h14 {
     border-radius: 4px;
     text-decoration: none;
 }
+
+

@@ -48,7 +48,6 @@
     font-size: 60px;
     font-weight: 700;
     font-family: Prompt;
-    white-space: nowrap;
     color: #ffc000;
 }
 
@@ -60,16 +59,13 @@
     display: flex;
     gap: 15px;
     font-family: Prompt;
-    white-space: nowrap;
     font-weight: 500;
 }
 
 .Home01-item03 {
     width: 100%;
     font-size: 18px;
-    line-height: 0.4;
     font-family: Prompt;
-    white-space: nowrap;
     margin-bottom: 24px;
 }
 
@@ -199,7 +195,6 @@
     flex-wrap: nowrap;
     font-size: 6em;
     text-align: center;
-
 }
 
 .Home03-item-box03 {
@@ -254,3 +249,11 @@
       font-size: 45px;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+   
+.Home01-container {
+    padding: 0 24px;
+}
+  }
+

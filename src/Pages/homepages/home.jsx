@@ -13,6 +13,7 @@ import "../homepages/styles/homepages12.css";
 import "../homepages/styles/homepages13.css";
 import "../homepages/styles/homepages14.css";
 import "../homepages/styles/homepages15.css";
+import "../homepages/styles/resposive.css";
 
 import Typewriter from "../../components/typewriter";
 import IconDiscord from "../../assets/icons/iconDiscord";
@@ -66,6 +67,12 @@ import Blogvue from "../../assets/logo/card/blog-vue.webp";
 import Blogcardui from "../../assets/logo/card/blog-cardui.webp";
 
 const HomePages = () => {
+  const response= [
+    { breakPoint: 1425, cardsToShow: 4 }, 
+    { breakPoint: 1000, cardsToShow: 3 },
+    { breakPoint: 700, cardsToShow: 2 },
+    { breakPoint: 200, cardsToShow: 1 }
+  ]
   const [showVideo, setshowVideo] = useState(false);
   const [APIdata, setAPIdata] = useState(55);
   const [
@@ -133,7 +140,6 @@ const HomePages = () => {
                   สร้างสรรค์แอปพลิเคชัน และ ผลงานด้านดิจิทัล
                   ด้วยหลักสูตรที่ลงลึกจัดเต็ม
                 </p>
-                <br />
                 <p>
                   ทั้งศาสตร์ และ
                   ศิลป์จากผู้มีประสบการณ์เชี่ยวชาญด้านเทคโนโลยีตัวจริง
@@ -302,17 +308,16 @@ const HomePages = () => {
             <h14>แนะนำให้รู้จัก</h14>
           </div>
           <div className="Home02-container-text02">
-            <p style={{ fontSize: "54px" }}>อัพสกิลสายโค้ดดิ้งได้ไม่จำกัด</p>
-            <p style={{ fontSize: "54px" }}>ทั้งรูปแบบออนไลน์ และ ไลฟ์สด</p>
+            <p >อัพสกิลสายโค้ดดิ้งได้ไม่จำกัด</p>
+            <p >ทั้งรูปแบบออนไลน์ และ ไลฟ์สด</p>
             <p>
-              <span style={{ fontSize: "54px" }}>ใน</span>
-              <span style={{ fontSize: "54px", fontWeight: "600" }}>
+              <span >ใน</span>
+              <span style={{ fontWeight: "600" }}>
                 {" "}
                 bornto
               </span>
               <span
                 style={{
-                  fontSize: "54px",
                   color: "#ffc000",
                   fontWeight: "600",
                 }}
@@ -331,12 +336,12 @@ const HomePages = () => {
             </p>
           </div>
           <div className="Home02-container-text04">
-            <a href="" className="Home02-button01">
+            <div className="Home02-button01">
               <span>ลงทะเบียนวันนี้</span>
-            </a>
-            <a href="" className="Home02-button02">
+            </div>
+            <div className="Home02-button02">
               <span>👨🏻‍💻 ดูสิทธิพิเศษสำหรับสมาชิก</span>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -581,18 +586,20 @@ const HomePages = () => {
 
             <div className="Home06-content03" style={{ overflow: "hidden" }}>
               <div>
-                <Slider
+                <Slider 
+                 responsive={response}
                   cardsToShow={4}
                   autoSlide={2000}
                   pauseOnMouseOver={true}
                   padding="25px"
                   margin="0"
+                  width="300px"
                 >
                   {cardCourse.map((item, index) => (
                     <div
                       key={index}
                       style={{
-                        width: "0",
+                        width: "100%",
                         minWidth: "280px",
                         height: "280px",
                         padding: "6px",
@@ -602,9 +609,10 @@ const HomePages = () => {
                         src={item.image}
                         alt={item.image}
                         style={{
-                          width: "280px",
-                          height: "280",
+                          width: "100%",
+                          height: "280px",
                           padding: "6px",
+                          objectFit:"Fill",
                         }}
                       />
                     </div>
@@ -1051,12 +1059,12 @@ const HomePages = () => {
           </div>
         </div>
       </div>
-      <div className="Home14">
+      {/* <div className="Home14">
         <div className="Home14-container">
           <div className="Home14-content01">1</div>
           <div className="Home14-content02">2</div>
         </div>
-      </div>
+      </div> */}
       <div className="Home15">
         <div className="Home15-content">
           <div className="Home15-content01-item01">
