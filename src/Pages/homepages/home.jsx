@@ -13,7 +13,7 @@ import "../homepages/styles/homepages12.css";
 import "../homepages/styles/homepages13.css";
 import "../homepages/styles/homepages14.css";
 import "../homepages/styles/homepages15.css";
-import "../homepages/styles/resposive.css";
+import "../homepages/styles/responsive.css";
 
 import Typewriter from "../../components/typewriter";
 import IconDiscord from "../../assets/icons/iconDiscord";
@@ -476,7 +476,7 @@ const HomePages = () => {
                         <br />
                         <span>Front-End Developer อย่างมืออาชีพ</span>
                       </h6>
-                      <p className="card-text" style={{ fontSize: "30px" }}>
+                      <p className="card-text" style={{ fontSize: "30px",height:"80px" }}>
                         <p>
                           <span>คุณจะได้เรียนรู้ </span>
                           <Typewriter

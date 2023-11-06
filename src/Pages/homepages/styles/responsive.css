@@ -34,6 +34,15 @@
     margin-top: 40px;
     justify-content: unset;
   }
+
+  .Home08-content01-item01{
+    margin-top: 24px;
+  }
+
+  .Home06-content01-item01 {
+    font-size: 32px;
+  }
+
 }
 
 @media only screen and (max-width: 690px) {

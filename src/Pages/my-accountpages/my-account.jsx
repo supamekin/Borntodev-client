@@ -2,6 +2,8 @@ import "./styles/my-account.css";
 import { useState } from "react";
 import LoginForm from "./login/loginForm";
 import RegisterForm from "./registerForm/registerForm";
+import "./styles/responsive.css";
+import "./styles/login-register.css"
 
 const MyAccount = () => {
   const [tapNumber, setTapNumber] = useState(1);
@@ -58,12 +60,11 @@ const MyAccount = () => {
   return (
     <>
       <div className="my-Account">
-        <div className="my-Account-header">
+        <div className="my-Account-header" style={{fontSize:"3em"}}>
           <div
             className={tapNumber === 1 ? "tap02-selected" : "tap02"}
             style={{
               textAlign: "center",
-              fontSize: "3em",
               cursor: "pointer",
               color: "#bfbfbf",
             }}
@@ -75,7 +76,6 @@ const MyAccount = () => {
             className={tapNumber === 2 ? "tap02-selected" : "tap02"}
             style={{
               textAlign: "center",
-              fontSize: "3em",
               cursor: "pointer",
               color: "#bfbfbf",
             }}

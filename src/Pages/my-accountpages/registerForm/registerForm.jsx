@@ -41,7 +41,6 @@ const RegisterForm = ({ onSubmit, loadingBtn }) => {
       <form
         className="my-form"
         onSubmit={handleSubmit(onSubmit)}
-        style={{ width: "40vw" }}
       >
         <div className="Full-Name">
           <div className="First-Name">

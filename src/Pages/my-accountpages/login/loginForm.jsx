@@ -29,9 +29,8 @@ const LoginForm = ({ onSubmit, loadingBtn}) => {
   return (
     <>
       <div
-        className="input-field"
+        className="input-field my-form "
         onSubmit={handleSubmit(onSubmit)}
-        style={{ width: "35vw", height: "600px" }}
       >
         <div className="Login-email">
           <label>ชื่อผู้ใช้หรือที่อยู่อีเมล</label>

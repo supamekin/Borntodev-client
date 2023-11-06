@@ -1,0 +1,9 @@
+.my-form {
+    width: 35vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .my-form {
+      width: 60%;
+    }
+  }

@@ -22,4 +22,9 @@
     Webservices
     - Rest API
 
+    Others
+    - Postman
+    - Figma 
+    - Visual Studio Code 
+    
 https://supamekin.github.io/Borntodev-client/
