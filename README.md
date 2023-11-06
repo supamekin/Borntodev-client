@@ -1,5 +1,25 @@
-# Coby Web Borntodev
-    เป็นการจำลองเว็บไซต์ Borntodev โดยมีส่วนประกอบของหน้า home,login และ Rehister 
+# Coppy Web Borntodev
+    เป็นการฝึกเขียนโค้ดจำลองเว็บไซต์ Borntodev 
+    โดยมีส่วนประกอบของ navbar, footer, homepage, login, RegisterForm 
     
+    Programing Language 
+    - HTML
+    - CSS
+    - JaveScript
+
+    Library 
+    - React.js
+    - Node.js
+    
+    CSSframework
+    - Bootstrap
+    - antd
+
+    Version control
+    - Git
+    - Github
+
+    Webservices
+    - Rest API
 
 https://supamekin.github.io/Borntodev-client/
