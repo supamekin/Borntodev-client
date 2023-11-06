@@ -118,7 +118,7 @@ const HomePages = () => {
                 <h11 className="Home01-h11">👨🏻‍💻 เรียนรู้ทักษะแห่งอนาคต</h11>
               </div>
               <div className="Home01-item02">
-                <p>ให้คุณ</p>
+                <span>ให้คุณ</span>
                 <Typewriter
                   text={[
                     '"ได้กลายเป็นนักพัฒนาเทคโนโลยีรุ่นใหม่"',
@@ -133,7 +133,7 @@ const HomePages = () => {
                   infinite
                   reverse={true}
                 />
-                <p>ได้ในวันนี้ !</p>
+                <span>ได้ในวันนี้ !</span>
               </div>
               <div className="Home01-item03">
                 <p>
