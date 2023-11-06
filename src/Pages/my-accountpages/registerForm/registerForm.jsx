@@ -3,7 +3,6 @@ import RegisterPassword from "./components/registerPassword";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-// import { Button } from "@mui/material";
 import { Button } from "antd";
 
 const RegisterForm = ({ onSubmit, loadingBtn }) => {

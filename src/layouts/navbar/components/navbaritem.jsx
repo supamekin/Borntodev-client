@@ -20,7 +20,7 @@ function NavbarItem(prop) {
             </div>
           ) : null}
           <div className={location.pathname === "/my-account" ?"tap02" : "tap01" } style={{ cursor: "pointer" }}>
-            {prop.titleName}
+            <span>{prop.titleName}</span>
           </div>
         </div>
       </div>

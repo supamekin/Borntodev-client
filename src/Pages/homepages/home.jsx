@@ -16,7 +16,6 @@ import "../homepages/styles/homepages15.css";
 
 import Typewriter from "../../components/typewriter";
 import IconDiscord from "../../assets/icons/iconDiscord";
-// import HomepagesItem from "./component/Homepages";
 import YoutubeDev from "../../assets/logo/maxresdefault.webp";
 import SCasset from "../../assets/logo/SCasset.webp";
 import PTTlogo from "../../assets/logo/PTT_Digital.webp";
@@ -36,8 +35,6 @@ import B2Dlogo from "../../assets/logo/logo-b2d-school-blackyellow.png";
 import Businesslogo from "../../assets/logo/business-course-1024x812.jpg";
 import Picture1 from "../../assets/logo/picture-1024x683-1.webp";
 import Devlablogo from "../../assets/logo/devlab_logo-02-minimal-1.png";
-// import Devui from "../../assets/logo/card/Devinit-blog-cardui-900x604.webp"
-// import Macbookimg from "../../assets/logo/mockup-of-an-angled-macbook-pro-a20334.jpg"
 import Accessimg from "../../assets/logo/open-access-2022-300x109.png";
 
 import course1 from "../../assets/logo/gallery/sqr_get-started-php.png";
@@ -57,7 +54,6 @@ import course14 from "../../assets/logo/gallery/sqr_front-end-1.webp";
 
 import { useEffect, useState } from "react";
 import Slider from "react-styled-carousel";
-// import { Container, NavItem } from "react-bootstrap";
 import Cardcontent from "../../components/cardContent/cardContent";
 import CardColor from "../../components/cardContent/cardContent-Color";
 import IconDatabase from "../../assets/icons/iconDatabase";

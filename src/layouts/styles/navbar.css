@@ -10,8 +10,6 @@
 
 .navbar01-container {
     width: 85%;
-    padding: 0 90px;
-    max-width: 1425px;
     display: flex;
     /* background-color: yellow; */
 }
@@ -39,10 +37,14 @@
 }
 
 .navbar01-item{
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center; 
+}
+
+.navbarMenu {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .obj-opa08 {
@@ -78,5 +80,41 @@
     bottom: 0;
     transition: all 0.5s ease;
 }
+
+.ant-drawer-content-wrapper {
+    width: auto !important;
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar01-container  {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 90px;
+        max-width: 1425px;
+    }
+
+    .navbar01-item {
+        margin-left: auto;
+    }
+    .HamMenu {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbarMenu {
+        display: none;
+    }
+    .navbar01-container {
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    
+}
+
+
+
 
 

@@ -1,7 +1,7 @@
 import "./styles/my-account.css";
 import { useState } from "react";
 import LoginForm from "./login/loginForm";
-import RegisterForm from "./formRequired/registerForm";
+import RegisterForm from "./registerForm/registerForm";
 
 const MyAccount = () => {
   const [tapNumber, setTapNumber] = useState(1);
